@@ -1,0 +1,64 @@
+.main {
+	font-size: 20px;
+	height: 300px;
+	width: 700px;
+	margin: 100px auto;
+	background: rgb(212, 231, 173);
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(26, 29, 21, 0.41), -2px -2px 10px rgba(26, 29, 21, 0.41);
+}
+.wrapper {
+	padding: 10px 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.chat {
+	overflow-y: auto;
+	/* хром, сафари */
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+
+	/* ie 10+ */
+	& {
+		-ms-overflow-style: none;
+	}
+
+	/* фф (свойство больше не работает, других способов тоже нет)*/
+	& {
+		overflow: -moz-scrollbars-none;
+	}
+}
+.send {
+	margin-top: 5px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.input {
+	letter-spacing: 1px;
+	font-size: 20px;
+	width: 100%;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.button {
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.my {
+	background-color: rgba(120, 120, 222, 0.629);
+	border-radius: 5px;
+	margin-top: 2px;
+	padding: 5px;
+	text-align: right;
+}
+.enemy {
+	margin-top: 2px;
+	background-color: rgb(216, 184, 105);
+	border-radius: 5px;
+	padding: 5px;
+}
